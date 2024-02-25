@@ -1,0 +1,21 @@
+/* RegisForm.css */
+.form-container {
+  font-family: Arial, sans-serif; /* Specify desired font family */
+}
+.form-group {
+  padding: 10px;
+}
+.form-group label {
+  font-size: 12px;
+  /* Adjust font size for labels */
+}
+
+.input-box {
+  font-size: 12px;
+  /* Adjust font size for input fields */
+}
+
+.select-box {
+  font-size: 12px;
+  /* Adjust font size for select dropdown */
+}
