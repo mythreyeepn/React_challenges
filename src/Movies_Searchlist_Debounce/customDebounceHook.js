@@ -1,4 +1,4 @@
-function useDebounce (cb, delay)  {
+function useDebounce(cb, delay) {
   let timer;
   return function (...args) {
     if (timer) clearTimeout(timer);
@@ -6,6 +6,6 @@ function useDebounce (cb, delay)  {
       cb(...args);
     }, delay);
   };
-};
+}
 
 export default useDebounce;
