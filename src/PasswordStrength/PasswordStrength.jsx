@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useRef } from "react";
 
 const PasswordStrength = () => {
   const [password, SetPassword] = useState("");

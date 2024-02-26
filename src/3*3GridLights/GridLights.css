@@ -1,0 +1,17 @@
+.parentDiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+.coloredChilDiv {
+  border: 1px solid black;
+  padding: 30px;
+  margin: 10px;
+  flex-basis: 20%;
+  background-color: orange;
+}
+.notColored {
+  border: 1px solid black;
+  padding: 30px;
+  margin: 10px;
+  flex-basis: 20%;
+}

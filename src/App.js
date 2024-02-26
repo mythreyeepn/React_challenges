@@ -6,6 +6,8 @@ import SearchList from "./Movies_Searchlist_Debounce";
 import Rating from "./Star_Rating";
 import PasswordStrength from "./PasswordStrength";
 import DisplayComponent from "./ProgressBar";
+import GridLights from "./3*3GridLights";
+
 // import NotFound from './NotFound';
 
 const App = () => {
@@ -18,6 +20,7 @@ const App = () => {
         <Route path="/Rating" element={<Rating />} />
         <Route path="/passwordStrength" element={<PasswordStrength />} />
         <Route path="/progressBar" element={<DisplayComponent />} />
+        <Route path="/lights" element={<GridLights />} />
       </Routes>
     </Router>
   );
