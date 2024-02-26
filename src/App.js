@@ -5,6 +5,7 @@ import TimerComponent from "./Set,Pause,ResetTimer";
 import SearchList from "./Movies_Searchlist_Debounce";
 import Rating from "./Star_Rating";
 import PasswordStrength from "./PasswordStrength";
+import DisplayComponent from "./ProgressBar";
 // import NotFound from './NotFound';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/search" element={<SearchList />} />
         <Route path="/Rating" element={<Rating />} />
         <Route path="/passwordStrength" element={<PasswordStrength />} />
+        <Route path="/progressBar" element={<DisplayComponent />} />
       </Routes>
     </Router>
   );
