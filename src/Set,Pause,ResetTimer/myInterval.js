@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-function UsemyInterval(initalCounter, initilFlag) {
+function UsemyInterval(initalCounter, initilFlag = false) {
   const [counter, setCounter] = useState(initalCounter);
   const [isRunning, setIsRunning] = useState(initilFlag);
   useEffect(() => {

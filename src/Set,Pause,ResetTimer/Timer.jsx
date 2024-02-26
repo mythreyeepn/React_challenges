@@ -2,14 +2,14 @@
  * Start, pause and reset timer
  */
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import myInterval from "./myInterval";
 import "./timer.css";
 
 const Timer = () => {
   // const [counter, setCounter] = useState(0);
   // const [isRunning, setIsRunning] = useState(0);
-  const [counter, setCounter, isRunning, setIsRunning] = myInterval(0, false);
+  const [counter, setCounter, setIsRunning] = myInterval(0, false);
 
   const start = () => {
     setIsRunning(true);
