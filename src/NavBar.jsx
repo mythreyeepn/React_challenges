@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "./BackGround-Changer/BackGroundChanger";
-import "./index.css"
+import "./index.css";
 
 const NavBar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -10,18 +10,18 @@ const NavBar = () => {
   };
   return (
     <>
- <div className="container">
-      <div className="mode-switch">
-        <label>
-          <input
-            type="checkbox"
-            onChange={toggleMode}
-            checked={theme === "dark"}
-          />
-          <span>Theme : {theme}</span>
-          {/* <span className="slider round"></span> */}
-        </label>
-      </div>
+      <div className="container_nav">
+        <div className="mode-switch">
+          <label>
+            <input
+              type="checkbox"
+              onChange={toggleMode}
+              checked={theme === "dark"}
+            />
+            <span>Theme : {theme}</span>
+            {/* <span className="slider round"></span> */}
+          </label>
+        </div>
       </div>
     </>
   );

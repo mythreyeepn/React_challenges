@@ -9,6 +9,7 @@ import DisplayComponent from "./ProgressBar";
 import GridLights from "./3*3GridLights";
 import NavBar from "./NavBar";
 import { BackGroundChanger } from "./BackGround-Changer/BackGroundChanger"; // Importing the context provider
+import TrafficLights from "./Traffic-Lights";
 
 // import NotFound from './NotFound';
 
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/passwordStrength" element={<PasswordStrength />} />
           <Route path="/progressBar" element={<DisplayComponent />} />
           <Route path="/lights" element={<GridLights />} />
+          <Route path="/trafficLights" element={<TrafficLights />} />
         </Routes>
       </Router>
     </BackGroundChanger>

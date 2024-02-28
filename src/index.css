@@ -21,7 +21,7 @@ h1 {
   position: relative;
   margin-left: 10px;
 }
-.container {
+.container_nav {
   display: flex;
   justify-content: flex-end;
 }
