@@ -10,6 +10,7 @@ import GridLights from "./3*3GridLights";
 import NavBar from "./NavBar";
 import { BackGroundChanger } from "./BackGround-Changer/BackGroundChanger"; // Importing the context provider
 import TrafficLights from "./Traffic-Lights";
+import Tabs from "./BasicTabs/Tabs";
 
 // import NotFound from './NotFound';
 
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/progressBar" element={<DisplayComponent />} />
           <Route path="/lights" element={<GridLights />} />
           <Route path="/trafficLights" element={<TrafficLights />} />
+          <Route path="/tabs" element={<Tabs />} />
         </Routes>
       </Router>
     </BackGroundChanger>
