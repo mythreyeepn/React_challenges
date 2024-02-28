@@ -7,22 +7,27 @@ import Rating from "./Star_Rating";
 import PasswordStrength from "./PasswordStrength";
 import DisplayComponent from "./ProgressBar";
 import GridLights from "./3*3GridLights";
+import NavBar from "./NavBar";
+import { BackGroundChanger } from "./BackGround-Changer/BackGroundChanger"; // Importing the context provider
 
 // import NotFound from './NotFound';
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route exact path="/" element={<RegisForm />} />
-        <Route path="/timer" element={<TimerComponent />} />
-        <Route path="/search" element={<SearchList />} />
-        <Route path="/Rating" element={<Rating />} />
-        <Route path="/passwordStrength" element={<PasswordStrength />} />
-        <Route path="/progressBar" element={<DisplayComponent />} />
-        <Route path="/lights" element={<GridLights />} />
-      </Routes>
-    </Router>
+    <BackGroundChanger>
+      <Router>
+        <NavBar></NavBar>
+        <Routes>
+          <Route exact path="/" element={<RegisForm />} />
+          <Route path="/timer" element={<TimerComponent />} />
+          <Route path="/search" element={<SearchList />} />
+          <Route path="/Rating" element={<Rating />} />
+          <Route path="/passwordStrength" element={<PasswordStrength />} />
+          <Route path="/progressBar" element={<DisplayComponent />} />
+          <Route path="/lights" element={<GridLights />} />
+        </Routes>
+      </Router>
+    </BackGroundChanger>
   );
 };
 

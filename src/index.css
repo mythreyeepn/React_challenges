@@ -1,1 +1,27 @@
-
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --heading-color: #444444;
+}
+[data-theme="dark"] {
+  --bg-color: #333333;
+  --text-color: #ffffff;
+  --heading-color: #dddddd;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+h1 {
+  color: var(--heading-color);
+}
+.mode-switch {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  margin-left: 10px;
+}
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
