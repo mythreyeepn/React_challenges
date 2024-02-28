@@ -11,6 +11,7 @@ import NavBar from "./NavBar";
 import { BackGroundChanger } from "./BackGround-Changer/BackGroundChanger"; // Importing the context provider
 import TrafficLights from "./Traffic-Lights";
 import Tabs from "./BasicTabs/Tabs";
+import Clock from "./DigitalClock/Clock";
 
 // import NotFound from './NotFound';
 
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/lights" element={<GridLights />} />
           <Route path="/trafficLights" element={<TrafficLights />} />
           <Route path="/tabs" element={<Tabs />} />
+          <Route path="/clock" element={<Clock />} />
         </Routes>
       </Router>
     </BackGroundChanger>
