@@ -14,6 +14,7 @@ import Tabs from "./BasicTabs/Tabs";
 import Clock from "./DigitalClock/Clock";
 import TotalJobs from "./JobsBoard/TotalJobs";
 import DisplayPrev from "./Previous-value-CustomHook/DisplayPrevious";
+import UseClick from "./Detect-Click_Outside/UseClick";
 
 // import NotFound from './NotFound';
 
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/clock" element={<Clock />} />
           <Route path="/jobsBoard" element={<TotalJobs />} />
           <Route path="/prev" element={<DisplayPrev />} />
+          <Route path="/UseClick" element={<UseClick />} />
         </Routes>
       </Router>
     </BackGroundChanger>
