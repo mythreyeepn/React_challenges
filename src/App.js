@@ -13,6 +13,7 @@ import TrafficLights from "./Traffic-Lights";
 import Tabs from "./BasicTabs/Tabs";
 import Clock from "./DigitalClock/Clock";
 import TotalJobs from "./JobsBoard/TotalJobs";
+import DisplayPrev from "./Previous-value-CustomHook/DisplayPrevious";
 
 // import NotFound from './NotFound';
 
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/tabs" element={<Tabs />} />
           <Route path="/clock" element={<Clock />} />
           <Route path="/jobsBoard" element={<TotalJobs />} />
+          <Route path="/prev" element={<DisplayPrev />} />
         </Routes>
       </Router>
     </BackGroundChanger>
