@@ -12,6 +12,7 @@ import { BackGroundChanger } from "./BackGround-Changer/BackGroundChanger"; // I
 import TrafficLights from "./Traffic-Lights";
 import Tabs from "./BasicTabs/Tabs";
 import Clock from "./DigitalClock/Clock";
+import TotalJobs from "./JobsBoard/TotalJobs";
 
 // import NotFound from './NotFound';
 
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/trafficLights" element={<TrafficLights />} />
           <Route path="/tabs" element={<Tabs />} />
           <Route path="/clock" element={<Clock />} />
+          <Route path="/jobsBoard" element={<TotalJobs />} />
         </Routes>
       </Router>
     </BackGroundChanger>
